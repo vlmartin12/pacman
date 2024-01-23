@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-color: navy;
+  color: yellow;
+
+}
+canvas{
+  margin: 0;
+  position: relative;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+ul{
+  position: relative;
+ top: 20%;
+ float:right;
+  width:50%;
+}
+#title{
+position: relative;
+left: 40%;
+}
+table{
+  position: relative;
+  left: 20%;
+}

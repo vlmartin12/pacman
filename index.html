@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Give your game / page a title! -->
+  <title> Pacman - Vincent Martin </title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="images/pacman.png">
+
+  <!-- This will load the script file AFTER the document is loaded -->
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+  <img id="title" src="images/pacmanT.png">
+  <ul id="instructions">
+    <li><b>Instructions:</b></li>
+    <li>You may control pacman using the : A, W, D, S or the arrow keys.</li>
+    <li>The goal of the game is to move around the map collecting the highest score possible.</li>
+    <li>Make sure to stay away from the ghost unless you have collected a superchip (red square) then you'll have 10
+      seconds to enjoy a nice ghost dinner.</li>
+  </ul>
+  <table>
+    <tr>
+      <td>High Score : </td>
+      <td id="highScore">0</td>
+    </tr>
+    <tr>
+      <td> Score :</td>
+      <td id="score">0</td>
+    </tr>
+    <tr>
+      <td>Lives Remaining :</td>
+      <td id="lives">3</td>
+    </tr>
+    <tr><td id = "max"></td></tr>
+  </table>
+
+
+
+
+  <canvas id="myCanvas" width="600" height="400" style="border:1px solid #000000;"></canvas>
+  <img id="pacman" src="images/pacman.png" hidden>
+  <img id="pacmanC" src="images/PacMan_Only.png" hidden>
+  <img id="redGhost" src="images/redGhost.png" hidden>
+  <img id="blueGhost" src="images/blueGhost.png" hidden>
+  <img id="eGhost" src="images/eGhost.png" hidden>
+</body>
+
+
+</html>

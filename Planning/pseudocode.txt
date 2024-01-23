@@ -1,0 +1,33 @@
+View:
+Play (after first click it becomes play again)
+basic instructions: controls and goal
+High Score: 
+Score:
+canvas translated to the center of the page with a hardcoded maze
+
+Model:
+class for ghosts & pacman:
+x: value
+y: value
+height: value
+width: value
+image: src
+superchip: boolean
+draw() 
+
+Hardcoded map: walls pointed out
+point chips every 5px randomly chosen super chips that changes superchip to true for 10 sec 
+
+score if eating a chip or super chip add 10 points if eating ghost add 100 points
+
+Controller:
+pacman:
+takes input
+checks if coliding with wall or ghost using (x<= value <=x+width)&&(y<=value<=y+height)   check if colliding with ghost if super chip is active to decide outcome
+calls draw function if not coliding with something
+uses requestAnimationFrame between inputs
+
+ghost:
+start in middle 
+randomly select up,down, left or right but cannot go back on its steps unless at a dead end
+use requestAnimationFrame 
